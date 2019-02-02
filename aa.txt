@@ -1,0 +1,30 @@
+package printevennumbers;
+
+public class Polindome {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int r= 125;
+		int t;
+		int sum=0;
+		int w=r;
+		while (r>0) {
+			t=r%10;
+
+			sum =(sum*10)+t;
+			
+			r=r/10;
+			
+		}
+		
+		if (w==sum) {
+			System.out.println("palindrome number");
+		}else {
+			System.out.println(" not palindrome number");
+		}
+		
+		
+		
+	}
+
+}
